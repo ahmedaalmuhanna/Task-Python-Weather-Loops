@@ -58,7 +58,7 @@ def hottest_days(temperatures, threshold):
 def print_hottest_days(temperatures, threshhold):
     myTemp=[]
     for temp in temperatures:
-        if temp >= threshold:
+        if temp >= threshhold:
             myTemp.append(temp)
     print(temp)
     print(myTemp)
