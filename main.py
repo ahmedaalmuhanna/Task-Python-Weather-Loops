@@ -27,7 +27,7 @@ def to_celsius(temperatures):
 
 
         #print(temp)
-        
+    return cTemp
 
 
 
@@ -43,6 +43,7 @@ def hottest_days(temperatures, threshold):
             myTemp.append(temp)
     print(temp)
     print(myTemp)
+    return myTemp
             
 
 
@@ -56,15 +57,11 @@ def hottest_days(temperatures, threshold):
 # hint: you can combine
 #       all previous functions
 def print_hottest_days(temperatures, threshhold):
-    myTemp=[]
-    for temp in temperatures:
-        if temp >= threshhold:
-            myTemp.append(temp)
-    print(temp)
-    print(myTemp)
-            
-
-
-# to_celsius([22,30,41,3,2,12,5])
-# printer([22,30,41,3,2,12,5])
-# print(hottest_days([22,30,41,3,2,12,5], 10))
+    
+     printer(to_celsius(hottest_days(temperatures, threshhold)))
+x = [10,1,2,5,20,56,70,-1]
+print(type(x[3]))
+print((x[3]))
+print_hottest_days(x,25)
+    
+    
